@@ -6,10 +6,14 @@ dictionary = {
     'Ada Lovelace': '12/10/1815'}
 
 def birthday_dictionary():
-    print('Welcome to the birthday dictionary. We know the birthdays of:')
+    print('Welcome to the birthday dictionary. We know the birthdays of: ')
     for key in dictionary:
         print(key)
-    person = input("Who's birthday would you like to look up?")
-    print(dictionary[person])
+    person = input("Who's birthday would you like to look up? ")
+    while person in dictionary:
+        print(dictionary[person])
+        break
+    else:
+        print("This name is not in the dictionary")
 
 birthday_dictionary()
