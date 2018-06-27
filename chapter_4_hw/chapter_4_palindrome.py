@@ -5,6 +5,7 @@
 
 def palindrome_detector():
     string_forward = input('Enter a string: ')
+    string_forward = string_forward.lower()
     string_reverse = ''.join(string_forward[len(string_forward)::-1])
     if string_forward == string_reverse:
         print("This is a palindrome!")
