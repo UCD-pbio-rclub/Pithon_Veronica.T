@@ -5,8 +5,8 @@
 #(ie ploidy, genome size, region).
 #Write new methods which allow a user to see these values in informative ways.
 
-class LongOrganism:
-    def __init__(self, kingdom, phylum, org_class, order, family, genus, species, common_name, region):
+class LongOrganism(Organism, region):
+    def __init__(self, region):
         Organism.__init__(self, kingdom, phylum, org_class, order, family, genus, species, common_name)
         LongOrganism.region = region
 
