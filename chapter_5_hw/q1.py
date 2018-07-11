@@ -3,4 +3,4 @@
 
 import tabnanny
 
-tabnanny.check("q1_test.py", -v)
+tabnanny.check("q1_test.py")
